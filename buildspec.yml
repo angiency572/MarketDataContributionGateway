@@ -10,17 +10,17 @@ phases:
   pre_build:
     commands:
       - echo Restore started on `date`
-      - dotnet restore MarketDataContributionAPI/MarketDataContributionAPI.csproj
+      - dotnet restore
 
   build:
     commands:
       - echo Build started on `date`
-      - dotnet build MarketDataContributionAPI/MarketDataContributionAPI.csproj
+      - dotnet build --configuration Release
 
   post_build:
     commands:
       - echo Publish started on `date`
-      - /root/.dotnet/sdk/6.0.407/MSBuild.dll -maxcpucount -verbosity:m -restore -target:Publish -property:Configuration=Release ./build_output/MarketDataContributionAPI.csproj -distributedlogger:Microsoft.DotNet.Tools.MSBuild.MSBuildLogger,/root/.dotnet/sdk/6.0.407/dotnet.dll*Microsoft.DotNet.Tools.MSBuild.MSBuildForwardingLogger,/root/.dotnet/sdk/6.0.407/dotnet.dll
+      - dotnet publish --configuration Release --output /tmp/publish
       
 
 artifacts:
