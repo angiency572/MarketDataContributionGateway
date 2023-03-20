@@ -10,17 +10,17 @@ phases:
   pre_build:
     commands:
       - echo Restore started on `date`
-      - dotnet restore ./MarketDataContributionAPI.csproj
+      - dotnet restore MarketDataContributionAPI/MarketDataContributionAPI.csproj
 
   build:
     commands:
       - echo Build started on `date`
-      - dotnet build ./MarketDataContributionAPI.csproj
+      - dotnet build MarketDataContributionAPI/MarketDataContributionAPI.csproj
 
   post_build:
     commands:
       - echo Publish started on `date`
-      - dotnet publish -c Release -o ./MarketDataContributionAPI.csproj
+      - dotnet publish -c Release -o MarketDataContributionAPI/MarketDataContributionAPI.csproj
 
 artifacts:
   files:
