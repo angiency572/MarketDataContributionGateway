@@ -21,6 +21,8 @@ phases:
     commands:
       - echo Publish started on `date`
       - dotnet publish -c Release ./build_output MarketDataContributionAPI.csproj
+      - /root/.dotnet/sdk/6.0.407/MSBuild.dll -maxcpucount -verbosity:m -restore -target:Publish -property:Configuration=Release ./build_output/MarketDataContributionAPI.csproj -distributedlogger:Microsoft.DotNet.Tools.MSBuild.MSBuildLogger,/root/.dotnet/sdk/6.0.407/dotnet.dll*Microsoft.DotNet.Tools.MSBuild.MSBuildForwardingLogger,/root/.dotnet/sdk/6.0.407/dotnet.dll
+      
 
 artifacts:
   files:
