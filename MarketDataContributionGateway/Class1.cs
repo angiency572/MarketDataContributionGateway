@@ -1,7 +1,6 @@
-﻿namespace MarketDataContributionGateway
-{
-    public class Class1
-    {
+﻿namespace MarketDataContributionGateway;
 
-    }
+public class Class1
+{
+
 }
