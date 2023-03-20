@@ -11,6 +11,7 @@ phases:
     commands:
       - echo Restore started on `date`
       - dotnet restore
+      - dotnet publish --self-contained -o /tmp/publish
 
   build:
     commands:
