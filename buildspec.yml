@@ -12,7 +12,7 @@ phases:
       - echo Restore started on `date`
       - dotnet restore MarketDataContributionAPI.csproj
 
-  build:s
+  build:
     commands:
       - echo Build started on `date`
       - dotnet build MarketDataContributionAPI.csproj
