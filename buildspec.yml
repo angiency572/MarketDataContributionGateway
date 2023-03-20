@@ -20,7 +20,7 @@ phases:
   post_build:
     commands:
       - echo Publish started on `date`
-      - dotnet publish -c Release -o ./MarketDataContributionAPI.csproj
+      - dotnet publish -c Release
 
 artifacts:
   files:
