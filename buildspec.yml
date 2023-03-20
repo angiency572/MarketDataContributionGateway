@@ -1,0 +1,28 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      dotnet: 6.0
+    commands:  
+      - /usr/local/bin/dotnet-install.sh --channel LTS
+
+  pre_build:
+    commands:
+      - echo Restore started on `date`
+      - dotnet restore
+
+  build:
+    commands:
+      - echo Build started on `date`
+      - dotnet build --configuration Release
+
+  post_build:
+    commands:
+      - echo Publish started on `date`
+      - dotnet publish --configuration Release --output /tmp/publish
+      
+
+artifacts:
+  files:
+    - '**/*'
