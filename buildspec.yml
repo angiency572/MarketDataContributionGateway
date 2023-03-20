@@ -11,7 +11,6 @@ phases:
     commands:
       - echo Restore started on `date`
       - dotnet restore
-      - dotnet publish --self-contained -o /tmp/publish
 
   build:
     commands:
@@ -21,8 +20,7 @@ phases:
   post_build:
     commands:
       - echo Publish started on `date`
-      - dotnet publish --configuration Release --output /tmp/publish
-      
+      - dotnet publish --self-contained --configuration Release --no-restore -o /tmp/publish     
 
 artifacts:
   files:
