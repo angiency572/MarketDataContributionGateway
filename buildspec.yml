@@ -20,7 +20,7 @@ phases:
   post_build:
     commands:
       - echo Publish started on `date`
-      - dotnet publish --self-contained --configuration Release --no-restore --runtime linux-x64 --output /tmp/publish      
+      - dotnet publish --configuration Release --output /tmp/publish
 
 artifacts:
   files:
