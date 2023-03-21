@@ -18,10 +18,4 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="MarketDataContributionGateway">
-      <HintPath>Library\MarketDataContributionGateway.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>
