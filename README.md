@@ -30,7 +30,7 @@ To use the Market Data Contribution API, follow these steps:
 
 # Other Considerations
 - Unit tests were implemented using Microsoft's MSTest framework.
-- The project uses NLog for logging, and logs to AWS CloudWatch using the NLog.AWS.Logger package. The logging configuration is set up in the appsettings.json file, which contains the AWS access key ID, secret access key, and region.
+- The project uses NLog for logging, and logs to AWS CloudWatch using the NLog.AWS.Logger package. The logging configuration is set up in the appsettings.json file, which contains the AWS access key ID, secret access key, and region retrieved from AWS Secrets M.
 - The project is designed to be deployed to AWS, and assumes that the necessary AWS infrastructure (e.g. EC2 instances, VPCs, security groups) has already been set up. The project can be deployed using AWS Elastic Beanstalk, which is an easy-to-use service that can deploy .NET applications to the cloud.
 
 
