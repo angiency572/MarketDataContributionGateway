@@ -32,3 +32,9 @@ To use the Market Data Contribution API, follow these steps:
 - Unit tests were implemented using Microsoft's MSTest framework.
 - The project uses NLog for logging, and logs to AWS CloudWatch using the NLog.AWS.Logger package. The logging configuration is set up in the appsettings.json file, which contains the AWS access key ID, secret access key, and region.
 - The project is designed to be deployed to AWS, and assumes that the necessary AWS infrastructure (e.g. EC2 instances, VPCs, security groups) has already been set up. The project can be deployed using AWS Elastic Beanstalk, which is an easy-to-use service that can deploy .NET applications to the cloud.
+
+
+# Future Improvements
+The following improvements could be made to the Market Data Contribution API:
+- Enhance the validation logic to support additional market data validation rules.
+- Add support for batch submissions and retrievals of FXQuote data.
