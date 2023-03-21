@@ -24,7 +24,7 @@ The Market Data Contribution API provides the following features:
 To use the Market Data Contribution API, follow these steps:
 - Send an HTTP POST request to the /MarketData endpoint with an FXQuote object in the request body. The API will validate the data and return a response with a unique identifier for the FXQuote data.
 - To retrieve the FXQuote data, send an HTTP GET request to the /MarketData/{currencyPair} endpoint
-- The API can also be tested using Postman or another HTTP client. Import the provided Postman collection and run the tests to submit and retrieve FXQuote data.
+- The API can also be tested using Postman or another HTTP client. Import the provided Postman collection (APITest/Market Data Contribution API Testing.postman_collection.json) and run the tests to submit and retrieve FXQuote data.
 
 # Other Considerations
 - Unit tests were implemented using Microsoft's MSTest framework.
