@@ -16,7 +16,7 @@ The Market Data Contribution API provides the following features:
 - The validation logic in the MarketDataValidationService class checks the market data against a set of rules to ensure that it is valid. If the market data is invalid, the service returns an error response. If the market data is valid, the service generates a unique identifier for the data and returns a success response with the identifier.
 
 # Assumptions
-- The API is intended for use by authorized users only. The HTTP requests require the authorization header which contains an encrypted API key.
+- The API is intended for use by authorized users only. The HTTP request requires an authorization header which contains an encrypted API key.
 - The API only validates FX quotes.
 - The API expects market data to be in a specific format (i.e. an FxQuote object with CurrencyPair, Bid, and Ask properties).
 
