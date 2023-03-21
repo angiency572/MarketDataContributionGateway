@@ -1,6 +1,6 @@
 # Overview
 The solution, built using .NET 6 and the ASP.NET Core framework, consists of two main components:
-- MarketDataContributionAPI project: Two RESTful APIs allow users to submit and validate foreign exchange (FX) market data.
+- MarketDataContributionAPI project: Two RESTful APIs allow users to submit and retrieve foreign exchange (FX) market data.
 - MarketDataContributionAPI.Test project: A unit test project of the MarketDataContributionAPI project.
 
 # Features
