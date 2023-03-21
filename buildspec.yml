@@ -21,7 +21,7 @@ phases:
     commands:
       - echo Publish started on `date`
       - dotnet publish --configuration Release --output /tmp/publish
-      
+
 
 artifacts:
   files:
