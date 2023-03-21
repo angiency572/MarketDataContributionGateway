@@ -5,9 +5,9 @@ The solution, built using .NET 6 and the ASP.NET Core framework, consists of two
 
 # Features
 The Market Data Contribution API provides the following features:
-- Submit FX market data (e.g. currency pair, bid and ask prices)
+- Submit and retrieve FX market data (e.g. currency pair, bid and ask prices) through API
 - Validate submitted market data based on business rules
-- Store and retrieve market data from AWS DynamoDB
+- Market data is stored in AWS DynamoDB
 - Monitor API usage and errors using NLog and AWS CloudWatch
 
 # Approach
