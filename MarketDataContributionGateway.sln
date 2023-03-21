@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketDataContributionAPI",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketDataContributionAPI.Tests", "MarketDataContributionAPI.Tests\MarketDataContributionAPI.Tests.csproj", "{C230F2CB-43FC-4C12-A1FB-5CDDDA840946}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketDataContributionGateway", "MarketDataContributionGateway\MarketDataContributionGateway.csproj", "{B02912EA-10F2-4C1A-B8AA-6232A44C0E8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketDataContributionGateway", "MarketDataContributionGateway\MarketDataContributionGateway.csproj", "{1ADE3F2D-A7C5-466F-8A67-9A15A5C59D6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{C230F2CB-43FC-4C12-A1FB-5CDDDA840946}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C230F2CB-43FC-4C12-A1FB-5CDDDA840946}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C230F2CB-43FC-4C12-A1FB-5CDDDA840946}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B02912EA-10F2-4C1A-B8AA-6232A44C0E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B02912EA-10F2-4C1A-B8AA-6232A44C0E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B02912EA-10F2-4C1A-B8AA-6232A44C0E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B02912EA-10F2-4C1A-B8AA-6232A44C0E8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ADE3F2D-A7C5-466F-8A67-9A15A5C59D6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ADE3F2D-A7C5-466F-8A67-9A15A5C59D6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ADE3F2D-A7C5-466F-8A67-9A15A5C59D6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ADE3F2D-A7C5-466F-8A67-9A15A5C59D6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
